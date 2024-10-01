@@ -1,0 +1,119 @@
+/* Сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основные стили */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    /* Фон в цветах Лейкерс */
+    background-image: linear-gradient(to right, #552583, #fdb927 30%, #f4f4f4 30%, #f4f4f4 70%, #552583);
+    background-size: 100% 100%;
+}
+
+/* Заголовок */
+header {
+    background-color: #552583; /* Темно-фиолетовый */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Навигация */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #fdb927; /* Золотой */
+    flex-wrap: wrap; /* Для адаптивности */
+}
+
+nav a {
+    color: white;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: #552583; /* Темно-фиолетовый при наведении */
+}
+
+/* Основной контент */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Добавлено для абсолютного позиционирования фона */
+}
+
+/* Стили для секций */
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #552583; /* Темно-фиолетовый */
+    margin-bottom: 15px;
+}
+
+/* Изображения */
+img.center {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Список фактов */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #552583; /* Темно-фиолетовый */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Адаптивная верстка */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column; /* Меняем направление навигации на вертикальное */
+    }
+    
+    nav a {
+        padding: 10px; /* Уменьшаем отступы для мобильных устройств */
+    }
+
+    main {
+        margin: 10px; /* Уменьшаем отступы для мобильных устройств */
+        padding: 15px; /* Уменьшаем внутренние отступы для мобильных устройств */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px; /* Уменьшаем размер шрифта заголовка для маленьких экранов */
+    }
+
+    h2 {
+        font-size: 20px; /* Уменьшаем размер шрифта заголовков секций для маленьких экранов */
+    }
+
+    nav a {
+        padding: 8px; /* Ещё больше уменьшаем отступы для мобильных устройств */
+    }
+}
